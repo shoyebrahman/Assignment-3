@@ -46,47 +46,44 @@
 
 </head>
 <body>
-    <header class=" p-2 lg:px-[100px] lg:py-[20px]">
-        <div class="navbar bg-base-100">
-            <div class="navbar-start">
-              <div class="dropdown">
-                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+     <header class="px-[20px] lg:px-[100px] lg:py-[20px]">
+        <nav>
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </div>
+                    <ul tabindex="0" class="menu menu-sm bg-slate-100 dropdown-content mt-3 z-[1] p-2 rounded-box w-52">
+                      <li><a>Home</a></li>
+                      <li><a href="#club">About</a></li>
+                      <li><a>pages</a></li>
+                      <li><a href="#prog">Blog</a></li>
+                      <li><a href="#contact">Contact</a></li>
+                    </ul>
+                  </div>
+                  <h1 class="text-3xl lg:text-4xl font-bold">Hockey<span class="text-red-400 ">'</span>s</h1>
                 </div>
-                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-70 manrope-font font-bold ">
-                    <li><a>Home</a></li>
-                    <li><a>About</a></li>
-                    <li><a>Pages</a></li>
-                    <li><a>Blog</a></li>
-                    <li><a>Contact</a></li>
-                </ul>
-              </div>
-              <a class="btn btn-ghost manrope-font text-3xl font-bold">Hockey’s</a>
-            </div>
-            <div class="navbar-center hidden lg:flex">
-              <ul class="menu menu-horizontal px-1">
-                <li><a>Home</a></li>
-                <li><a>About</a></li>
-                <li><a>Pages</a></li>
-                <li><a>Blog</a></li>
-                <li><a>Contact</a></li>
-              </ul>
-            </div>
-            <div class="navbar-end">
-              <i class="fa-solid fa-magnifying-glass"></i>
-              <a class="btn btn-lg bg-[#FF4240]">Get Started</a>
-            </div>
-            <div class="navbar-end">
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu-horizontal space-x-6 px-1">
+                    <li><a class="text-xl hover:text-red-400">Home</a></li>
+                    <li><a href="#club" class="text-xl hover:text-red-400">About</a></li>
+                    <li><a class="text-xl hover:text-red-400">pages</a></li>
+                    <li><a href="#prog" class="text-xl hover:text-red-400">Blog</a></li>
+                    <li><a href="#contact" class="text-xl hover:text-red-400">Contact</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end">
                     <i class="fa-solid fa-magnifying-glass mr-4 hidden lg:flex"></i>
                   <a class="btn bg-[#FF4240] text-white hover:bg-orange-400 duration-200">Get Started</a>
                 </div>
-          </div>
-  
-      </header>
+              </div>
+        </nav>
+    </header>
     <main class="p-2 lg:px-[100px]">
          <!--banner section-->
-         <section class="py-[10px] mb-10">
-         <div class="carousel w-full h-[70vh]  relative mb-10">
+         <section class="py-[10px] lg:mb-10">
+         <div class="carousel w-full lg:h-[70vh]  relative mb-50px">
             <div id="slide1" class="carousel-item relative w-full ">
               <img src="Images/1.png" class="w-full" />
               <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -156,7 +153,7 @@
             <h1 class="text-3xl font-bold lg:text-4xl text-center" >Program Sections</h1>
             <p class="px-5 text-center lg:px-[250px]"> The top minor league affiliated with the NHL, with 32 teams across North America</p>
             <div class="grid grid-cols-1   lg:grid-cols-2 lg:grid-rows-2 gap-5">
-              <div class="bg-cover bg-no-repeat lg:col-span-1 h-[60vh] relative lg:row-span-1 rounded-xl" style="background-image:url(./Images/2.png);background-size-cover;">
+              <div class="bg-cover bg-no-repeat lg:col-span-1 h-[30vh] relative lg:row-span-1 w-[20vh] lg:h-[80vh] lg:w-[150vh] rounded-xl" style="background-image:url(./Images/2.png);background-size-cover;">
               <div class="absolute w-full h-full z-10 bg-[linear-gradient(45deg,rgba(0,0,0,0.6),rgba(0,0,0,0.3))]"></div>
               <div  class="p-2 space-y-3 absolute bottom-3 text-white left-3 z-20">
                 <h1 class="text-2xl lg:text-3xl  font-bold text-white ">Junior Program</h1>
@@ -165,7 +162,7 @@
                   <button class="btn bg-[#FF4240] hover:bg-blue-400 text-xl text-white border-none">Register Now!</button>
               </div>
             </div>
-            <div class="bg-cover  lg:col-span-1 lg:row-span-1 h-[60vh] relative rounded-xl bg-no-repeat" style="background-image: url(./Images/3.png);  background-size-cover;">
+            <div class="bg-cover  lg:col-span-1 lg:row-span-1 h-[30vh] w-[20vh] lg:h-[80vh] lg:w-[150vh] relative rounded-xl bg-no-repeat " style="background-image: url(./Images/3.png);  background-size-cover;">
               <div class=" w-full h-full absolute z-10 bg-[linear-gradient(45deg,rgba(0,0,0,0.6),rgba(0,0,0,0.3))]"></div>
               <div class="text-white space-y-3 p-2 absolute bottom-3 left-3 z-20 ">
                   <h1 class="text-3xl lg:text-3xl font-bold text-white">Teenager Program</h1>
@@ -174,7 +171,7 @@
               </div>
 
             </div>
-            <div class="bg-cover bg-no-repeat lg:col-span-2 lg:row-span-1 h-[60vh] relative rounded-xl" style="background-image: url(./Images/4.png); background-size-cover;">
+            <div class="bg-cover bg-no-repeat lg:col-span-2 lg:row-span-1 h-[30vh] w-[20vh] lg:h-[80vh] lg:w-[305vh] relative rounded-xl" style="background-image: url(./Images/4.png); background-size-cover;">
               <div class="w-full h-full absolute z-10 bg-[linear-gradient(45deg,rgba(0,0,0,0.6),rgba(0,0,0,0.3))]"></div>
               <div class="text-white space-y-3 p-2 absolute bottom-3 left-3 z-20">
                 <h1 class="text-3xl lg:text-3xl font-bold text-white">Professional Program</h1>
